@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  max-height: 100vh;
+  /* overflow: hidden; */
+  /* scroll-snap-type: y mandatory; */
+}
+
+section {
+  height: 100vh;
+  /* scroll-snap-align: start; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 5vw;
+  background: white;
+}
+
+h1 {
+  font-size: 10vw;
+}
+
+h2 {
+  font-size: 2.3vw;
+}
+
+h4 {
+  font-size: 2.3vw;
+}
+
+p {
+  font-size: 2vw;
+  font-weight: 700;
+  padding: 1.5vw;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.bar {
+  text-decoration: none;
+  font-size: 2vw;
+  color: black;
+  margin-left: 5vw;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%) scale(6);
+}
+
+.firstPage {
+  background: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-align: start;
+}
+
+.firstPage > div {
+  text-align: center;
+  flex-direction: row;
+}
+
+.secondPage {
+  background: rgb(255, 240, 248);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+h5 {
+  font-size: 3.3vw;
+}
+
+.module {
+  text-align: center;
+  flex-direction: row;
+  padding: 5vh 0px;
+}
+
+.thirdPage {
+  background-image: url("/src/20190803151318_IMG_1834-01.jpg");
+  background-size: 1000px;
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(207, 207, 207, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-align: start;
+}
+
+.thirdPage > div {
+  text-align: center;
+  flex-direction: row;
+}
+
+.list {
+  display: inline-grid;
+  grid-template-columns: 30vw 30vw 30vw;
+}
+
+.itemList {
+  padding: 2vh;
+  text-align: center;
+}
+
+.fourthPage {
+  background: rgb(255, 240, 248);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.web {
+  text-decoration: none;
+  color: black;
+}
+
+.fifthPage {
+  background-image: url("/src/20190506180545_IMG_7993.jpg");
+  background-size: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #d6d6d6;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.row3 > .module {
+  text-align: center;
+  flex-direction: row;
+  padding: 1.5vh 0px;
+}
+
+.sixthPage {
+  padding-top: 100px;
+  height: 200vh;
+  background: rgb(255, 240, 248);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: start;
+  list-style: none;
+}
+
+.home {
+  height: 100vh;
+}
+
+.ftr {
+  padding: 10px;
+  background: rgb(255, 240, 248);
+  height: 100px;
+  width: 100%;
+}
+
+.kalu {
+  clear: both;
+  width: 98%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  border-radius: 100px;
+  color: rgb(255, 240, 248);
+  padding: 20px 0 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .bar {
+    font-size: 3vw;
+  }
+
+  .sliding-text {
+    font-size: 3vw;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1vw;
+    transform: translate(-50%, -50%) scale(6);
+  }
+
+  h3 {
+    font-size: 2.5vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  h5 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+  .secondPage > div {
+    width: 50%;
+  }
+
+  .thirdPage {
+    background-size: auto 100vh;
+  }
+
+  .fifthPage {
+    background-size: auto 100vh;
+  }
+
+  .sixthPage {
+    height: 95vh;
+    padding-bottom: 50px;
+  }
+
+  .ftr {
+    height: 50px;
+  }
+
+  .kalu {
+    padding: 10px 0 10px;
+  }
+}
